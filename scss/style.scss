@@ -89,6 +89,21 @@ body {
             font-weight: 700;
             font-size: 16px;
             color: white;
+            position: relative;
+            &:hover:before{
+              transform: scalex(1);
+            }
+            &:before{
+              content: '';
+              width: 100%;
+              height: 2px;
+              background-color: white;
+              position: absolute;
+              left: 0;
+              bottom: -5px;
+              transform: scaleX(0);
+              transition: all 0.2s ease 0s;
+            }
           }
         }
       }
@@ -106,7 +121,10 @@ body {
         @media (max-width: 500px){
           padding: 10px 8px;
           font-size: 10px;
-
+        }
+        transition: all 0.2s ease 0s;
+        &:hover{
+          transform: scale(105%, 105%);
         }
       }
     }
@@ -206,6 +224,10 @@ body {
             padding: 8px 52px;
             font-size: 16px;
             font-weight: 700;
+            transition: all 0.2s ease;
+            &:hover{
+              border-radius: 18px;
+            }
             @media (max-width: 600px){
               padding: 8px 30px;
             }
@@ -217,6 +239,10 @@ body {
             font-size: 16px;
             color: white;
             padding: 10px 26px;
+            transition: all 0.2s ease;
+            &:hover{
+              border-radius: 18px;
+            }
             @media (max-width: 600px){
               padding: 10px 14px;
             }
@@ -336,6 +362,10 @@ body {
           font-weight: 700;
           font-size: 16px;
           color: white;
+          transition: all 0.2s ease;
+            &:hover{
+              border-radius: 18px;
+            }
         }
       }
       .clutch__logo{
@@ -515,6 +545,10 @@ body {
           display: block;
           width: 160px;
           margin: 0 auto;
+          transition: all 0.2s ease;
+            &:hover{
+              border-radius: 18px;
+            }
         }
       }
     }
@@ -741,6 +775,10 @@ body {
               font-weight: 700;
               font-size: 18px;
               color: #ffffff;
+              transition: all 0.2s ease;
+              &:hover{
+                border-radius: 20px;
+              }
             }
           }
         }
@@ -805,6 +843,9 @@ body {
         font-size: 16px;
         color: #ffffff;
         line-height: 20px;
+        &:hover{
+          border-bottom: 1px solid white;
+        }
       }
       .footer__technologies {
         margin: 0 82px 0 0;
@@ -814,6 +855,10 @@ body {
       }
       .footer__products {
         margin: 0 125px 0 0;
+        .footer__title:hover{
+          border-bottom: 1px solid white;
+          width: fit-content;
+        }
         @media (max-width: 1200px){
           margin: 0 0 40px 0;
         }
